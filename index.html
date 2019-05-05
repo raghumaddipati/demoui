@@ -28,9 +28,9 @@
                 <div class="input-group">
                     <input type="text" class="form-control rfill" placeholder="Search" name="search" ng-model="search"> 
                     <!-- <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
                     </div> -->
-                  </div>
+                </div>
             </div>
 
             <ul class="list-unstyled components" id="leftnav">
@@ -48,12 +48,12 @@
 
         <!-- Page Content  -->
         <div id="content" >
-
+            
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
+                    
                     <span class="title">Raghu Demo</span>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
 
@@ -72,8 +72,15 @@
                     </div>
                 </div>
             </nav>
-
-            <div ng-view>
+            <div class="row">
+                <div class="col-1">
+                    <button type="button" id="sidebarCollapse" class="rmargin">
+                        <span class="fas fa-angle-double-right pad2" ></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <div class="cview" ng-view>
+                </div>        
                 
             </div>    
         </div>

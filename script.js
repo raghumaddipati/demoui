@@ -1,5 +1,17 @@
 'use strict';
 
+$(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).find('svg').toggleClass('fa-angle-double-left fa-angle-double-right');    
+    });
+    $( window ).resize(function() {
+        if($(window).width() > 769) 
+            $('#sidebar').removeClass('active');
+      });
+});
+
 var app = angular.module('customerApp', ['ngRoute']);
 
 app.config( function($routeProvider) {
