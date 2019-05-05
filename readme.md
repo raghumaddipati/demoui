@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------------------------
-Instructions for Raghu Maddipati for Building Demo UI
+Demo Project for Building Demo UI
 -------------------------------------------------------------------------------------------------
 
 Your task is to implement the following UI using Angular 1.6.x, JavaScript, CSS and HTML5.
