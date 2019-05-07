@@ -63,6 +63,7 @@ app.controller('custController', function($scope, custService) {
     custService.getCustomers().then ( function(response) {
         console.log(response.data.People);
         $scope.customerlist = response.data.People; 
+        location.href = "#detail/" + response.data.People[0].name;
     });
 });
 
